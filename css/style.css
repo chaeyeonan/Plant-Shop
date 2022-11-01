@@ -1,0 +1,217 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Guided style */
+:root {
+  /* Color mode HSL(hue, saturation, lightness) */
+  --hue: 152;
+  --first-color: hsl(var(--hue), 24%, 32%);
+  --first-color-alt: hsl(var(--hue), 24%, 28%);
+  --first-color-light: hsl(var(--hue), 24%, 66%);
+  --first-color-lighten: hsl(var(--hue), 24%, 92%);
+  --title-color: hsl(var(--hue), 4%, 15%);
+  --text-color: hsl(var(--hue), 4%, 35%);
+  --text-color-light: hsl(var(--hue), 4%, 55%);
+  --body-color: hsl(var(--hue), 0%, 100%);
+  --container-color: #fff;
+
+  /* Font and typography */
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /* Font weight */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+
+/* Reset Style */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: 0.4s; /*For animation dark mode*/
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Common Style */
+.wrap {
+  width: 100%;
+  height: auto;
+  /* overflow: hidden;  */
+}
+.container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  max-width: 1024px;
+}
+
+/* Navigation Style */
+.header {
+  box-shadow: 0 5px 10px #efefef;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0 1rem 0;
+}
+.navi-logo {
+  font-size: 1.15rem;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  display: flex;
+  align-items: center;
+}
+.navi-logo i {
+  color: var(--first-color);
+  margin-right: 5px;
+}
+.nav-menu,
+.nav-list {
+  display: flex;
+  align-items: center;
+  column-gap: 1.8rem;
+}
+.nav-list > .nav-item {
+  background: var(--body-color);
+}
+.nav-list .nav-link {
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  color: var(--title-color);
+  padding-bottom: 0.5rem;
+}
+.nav-list .active .nav-link {
+  color: var(--first-color);
+  position: relative;
+}
+.nav-list .active .nav-link::before {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background: var(--first-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.nav-btns {
+  display: flex;
+  column-gap: 0.5rem;
+}
+.nav-btns .nav-icon {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+}
+
+/* Main Style */
+.container.c-home {
+  display: flex;
+  padding: 5rem 0;
+  width: 100%;
+}
+.home-txt {
+  width: 55%;
+  margin: auto;
+}
+.home-txt div {
+  padding-bottom: 2rem;
+}
+.home-txt .home-title {
+  font-size: 3.5rem;
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  padding-bottom: 1rem;
+}
+.home-txt .home-detail {
+  color: var(--text-color);
+  height: auto;
+}
+.home-txt .button {
+  font-size: var(--font-medium);
+  color: #fff;
+  background: var(--first-color);
+  border-radius: 0.5rem;
+  padding: 0.8rem 2rem;
+  display: flex;
+  width: 8rem;
+  align-items: center;
+}
+.home-txt .button i {
+  padding-left: 0.3rem;
+}
+.home-img {
+  width: 35%;
+}
+.home-sns {
+  width: 10%;
+}
+.home-sns .sns-title {
+  transform: rotate(90deg);
+}
+
+/* 
+메인 타이틀: var(--big-font-size), var(--font-semi-bold), color: var(--title-color)
+작은 글씨 설명 : var(--text-color)
+버튼: var(--font-medium)
+*/
+
+/* Memo 
+
+<박스, 텍스트 그림자 효과> 
+박스와 글자에 그림자 효과를 표현한다. 첫번째 값은 x축, 두번째 값은  y축, 세번째 값은 번짐, 네번째 값은 그림자 색을 나타낸다
+
+ box-shadow: 0 10px 20px red;
+ text-shadow: 0 10px 20px gray;
+*/
