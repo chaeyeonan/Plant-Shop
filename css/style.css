@@ -288,7 +288,6 @@ img {
 #step {
   padding: 3rem 0;
 }
-
 .c-step {
   margin-top: 3rem;
   background: var(--first-color);
@@ -315,11 +314,14 @@ img {
   border-radius: 1rem;
 }
 .step-infoItem .info-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: var(--h2-font-size);
   background: var(--first-color);
-  width: fit-content;
+  width: 3.5rem;
+  height: 3.5rem;
   color: #fff;
-  padding: 0.5rem 0.7rem;
   border-radius: 0.3rem;
 }
 .step-infoItem .info-title {
