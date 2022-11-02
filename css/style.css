@@ -31,6 +31,18 @@
   --font-semi-bold: 600;
 }
 
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
 /* Reset Style */
 * {
   box-sizing: border-box;
@@ -95,6 +107,18 @@ img {
   margin: auto;
   max-width: 1024px;
 }
+/*.home-txt*/
+.button {
+  font-size: var(--h3-font-size);
+  color: #fff;
+  background: var(--first-color);
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.4rem;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
 
 /* Navigation Style */
 .header {
@@ -155,10 +179,10 @@ img {
   align-items: center;
 }
 
-/* Main Style */
+/* Main (HOME) Style */
 .container.c-home {
   display: flex;
-  padding: 5rem 0;
+  padding: 13rem 0 5rem 0;
   width: 100%;
 }
 .home-txt {
@@ -173,21 +197,13 @@ img {
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
   padding-bottom: 1rem;
+  line-height: 4.5rem;
 }
 .home-txt .home-detail {
   color: var(--text-color);
   height: auto;
 }
-.home-txt .button {
-  font-size: var(--font-medium);
-  color: #fff;
-  background: var(--first-color);
-  border-radius: 0.5rem;
-  padding: 0.8rem 2rem;
-  display: flex;
-  width: 8rem;
-  align-items: center;
-}
+
 .home-txt .button i {
   padding-left: 0.3rem;
 }
@@ -196,16 +212,34 @@ img {
 }
 .home-sns {
   width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .home-sns .sns-title {
+  display: flex;
+  align-items: center;
+  margin: 5rem 0 3rem 0;
+  font-size: var(--small-font-size);
   transform: rotate(90deg);
 }
-
-/* 
-메인 타이틀: var(--big-font-size), var(--font-semi-bold), color: var(--title-color)
-작은 글씨 설명 : var(--text-color)
-버튼: var(--font-medium)
-*/
+.home-sns .sns-title::after {
+  position: absolute;
+  background: var(--first-color);
+  content: "";
+  width: 50%;
+  height: 2px;
+  left: 4.2rem;
+}
+.sns-icon {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+.sns-icon a {
+  color: var(--text-color);
+}
 
 /* Memo 
 
