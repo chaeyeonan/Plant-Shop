@@ -284,6 +284,53 @@ img {
   align-items: center;
 }
 
+/* Main (STEP) Style */
+#step {
+  padding: 3rem 0;
+}
+
+.c-step {
+  margin-top: 3rem;
+  background: var(--first-color);
+  border-radius: 1rem;
+  padding: 2rem 0;
+}
+.step-title {
+  color: #fff;
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  text-align: center;
+  padding: 1rem 0;
+}
+.step-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 1rem;
+}
+.step-info .step-infoItem {
+  background: #fff;
+  width: 30%;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+}
+.step-infoItem .info-num {
+  font-size: var(--h2-font-size);
+  background: var(--first-color);
+  width: fit-content;
+  color: #fff;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.3rem;
+}
+.step-infoItem .info-title {
+  padding: 1.5rem 0 0.8rem 0;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+.step-infoItem .info-detail {
+  font-size: var(--small-font-size);
+}
+
 /* Memo 
 
 <박스, 텍스트 그림자 효과> 
