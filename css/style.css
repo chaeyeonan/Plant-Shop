@@ -516,6 +516,63 @@ img {
   padding-left: 0.5rem;
 }
 
+/* Main (FOOTER) Style */
+#footer {
+  padding: 4rem 0;
+}
+.c-footer {
+  display: flex;
+}
+.footer-item {
+  width: 22%;
+}
+.footer-item:nth-child(1) {
+  width: 34%;
+}
+.footer-item .item-title {
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  font-size: var();
+}
+.item-title.first {
+  padding: 2rem 0;
+}
+.footer-item .item-detail {
+  font-size: var(--smaller-font-size);
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+}
+.footer-item .item-detail.first {
+  display: flex;
+  align-items: center;
+  background: var(--first-color-lighten);
+  width: 80%;
+  padding: 0.8rem;
+}
+.footer-item .item-detail > .button {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  margin-left: 1.1rem;
+}
+.footer-item .item-detail > span {
+  display: block;
+  padding: 0.4rem 0;
+}
+.item-detail .sns-icon {
+  flex-direction: row;
+  padding-top: 0.5rem;
+}
+.item-detail .sns-icon i {
+  padding-right: 0.5rem;
+}
+.cardWrap {
+  display: flex;
+  padding: 1.5rem 0;
+}
+.cardWrap .card {
+  width: 40px;
+  padding-right: 0.4rem;
+}
 /* Memo 
 (1)
 <박스, 텍스트 그림자 효과> 
