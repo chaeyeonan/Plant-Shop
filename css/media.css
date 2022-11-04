@@ -46,6 +46,14 @@
   .c-qna {
     padding: 2rem 1rem;
   }
+
+  /* Main (CONTACT) Style */
+  .c-contact {
+    padding: 0rem 1rem;
+  }
+  .contact-title {
+    line-height: 3rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -146,6 +154,22 @@
   }
   .qna-header {
     padding: 0.7rem 1rem;
+  }
+
+  /* Main (CONTACT) Style */
+  .c-contact {
+    flex-direction: column;
+  }
+  .contact-title {
+    line-height: 2rem;
+  }
+  .contact-info {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .input-info {
+    width: 100%;
+    padding: 0;
   }
 }
 

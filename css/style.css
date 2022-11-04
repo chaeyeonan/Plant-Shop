@@ -345,7 +345,8 @@ img {
   text-align: center;
 }
 .products-title,
-.qna-title {
+.qna-title,
+.contact-title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
@@ -465,11 +466,65 @@ img {
   color: #fff;
 } */
 
-/* Memo 
+/* Main (QNA) Style */
+#contact {
+  padding: 5rem 0;
+}
+.c-contact {
+  display: flex;
+}
+.contact-title {
+  line-height: 3.5rem;
+}
+.contact-info {
+  width: 45%;
+}
+.info-txt {
+  padding-top: 2rem;
+}
+.info-title {
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+}
+.info-detail {
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.info-detail i {
+  margin-right: 10px;
+}
+.input-info {
+  width: 55%;
+  padding: 2rem 0 0 5%;
+}
+.input-info input,
+.input-info textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #b4b1b1;
+  padding: 0 0 1rem 0;
+  margin-bottom: 2rem;
+  resize: none;
+  outline: none;
+}
+.input-info button {
+  font-size: var(--normal-font-sizeås);
+}
+.input-info i {
+  padding-left: 0.5rem;
+}
 
+/* Memo 
+(1)
 <박스, 텍스트 그림자 효과> 
 박스와 글자에 그림자 효과를 표현한다. 첫번째 값은 x축, 두번째 값은  y축, 세번째 값은 번짐, 네번째 값은 그림자 색을 나타낸다
 
  box-shadow: 0 10px 20px red;
  text-shadow: 0 10px 20px gray;
+
+ (2) 
+ input 태그는 자식을 둘 수 없다.
+ 따라서 아이콘 같은 자식 요소가 필요할 때는 버튼을 사용한다.
 */
