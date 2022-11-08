@@ -54,6 +54,22 @@
   .contact-title {
     line-height: 3rem;
   }
+
+  /* Main (FOOTER) Style */
+  #footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .footer-item {
+    width: 50%;
+    padding: 2rem 0;
+  }
+  .footer-item:nth-child(1) {
+    width: 50%;
+  }
+  .footer-item .item-detail.first {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -189,6 +205,21 @@
   .product-img .product-circle {
     width: 80px;
     height: 80px;
+  }
+
+  /* Main (FOOTER) Style */
+  .footer-item {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .footer-item:nth-child(1) {
+    width: 100%;
+  }
+  .footer-item .item-detail.first {
+    width: 100%;
+  }
+  .item-title.forth {
+    width: auto;
   }
 }
 

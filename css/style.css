@@ -536,10 +536,11 @@ img {
 
 /* Main (FOOTER) Style */
 #footer {
-  padding: 4rem 0;
+  padding-top: 4rem;
 }
 .c-footer {
   display: flex;
+  flex-wrap: wrap;
 }
 .footer-item {
   width: 22%;
@@ -554,6 +555,9 @@ img {
 }
 .item-title.first {
   padding: 2rem 0;
+}
+.item-title.forth {
+  width: 140px;
 }
 .footer-item .item-detail {
   font-size: var(--smaller-font-size);
@@ -571,6 +575,9 @@ img {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
   margin-left: 1.1rem;
+}
+.footer-item .item-detail .button i {
+  padding-left: 0.5rem;
 }
 .footer-item .item-detail > span {
   display: block;
@@ -591,6 +598,13 @@ img {
   width: 40px;
   padding-right: 0.4rem;
 }
+.copy {
+  color: #b4b1b1;
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  padding: 7rem 0 0.5rem 0;
+}
+
 /* Memo 
 (1)
 <박스, 텍스트 그림자 효과> 
@@ -604,4 +618,7 @@ img {
  따라서 아이콘 같은 자식 요소가 필요할 때는 버튼을 사용한다.
 
  (3) placeholder-shown : placeholder가 보이는 것을 체크한다. 만약 사용자가 값을 입력하면 placeholder가 보이지 않는다.
+
+ (4)
+ !important : css에서 정의하는 값으로 가장 최우선 적용된다. 사용은 최소화한다.
 */
