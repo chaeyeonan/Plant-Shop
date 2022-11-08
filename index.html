@@ -364,15 +364,26 @@
             </div>
             <div class="input-info">
               <form action="abc.php" method="get">
-                <input type="text" placeholder="Email" />
-                <input type="text" placeholder="Subject" />
-                <textarea
-                  name=""
-                  placeholder="Message"
-                  id=""
-                  cols="30"
-                  rows="5"
-                ></textarea>
+                <p class="input-email">
+                  <input type="text" placeholder=" " class="input" />
+                  <label for="input">Email</label>
+                </p>
+                <p class="input-subject">
+                  <input type="text" placeholder=" " class="input" />
+                  <label for="input">Subject</label>
+                </p>
+                <p class="input-message">
+                  <textarea
+                    name=""
+                    placeholder=" "
+                    id=""
+                    cols="30"
+                    rows="5"
+                    class="input"
+                  ></textarea>
+                  <label for="input">Message</label>
+                </p>
+
                 <button type="submit" class="button">
                   Send Message
                   <i class="ri-arrow-right-up-line"></i>
