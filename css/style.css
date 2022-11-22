@@ -122,9 +122,16 @@ img {
 
 /* Navigation Style */
 .header {
-  box-shadow: 0 5px 10px #efefef;
+  background: #fff;
+}
+.header.sticky {
+  position: fixed;
+  box-shadow: 0 5px 8px #efefef;
+  width: 100%;
+  z-index: 1000;
 }
 .container.nav {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 0;
@@ -161,12 +168,22 @@ img {
 }
 .nav-list .active .nav-link::before {
   content: "";
-  width: 50%;
+  width: 0%;
   height: 2px;
   background: var(--first-color);
   position: absolute;
   left: 0;
   bottom: 0;
+  animation: ani 0.5s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes ani {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
 }
 .nav-btns {
   display: flex;
@@ -186,7 +203,7 @@ img {
 /* Main (HOME) Style */
 .container.c-home {
   display: flex;
-  padding: 13rem 0 5rem 0;
+  padding: 13rem 0;
   width: 100%;
 }
 .home-txt {
