@@ -1,5 +1,3 @@
-// Mobile Navigation Design
-
 // Sticky Header : 스크롤 시 헤더가 따라다니는 기능
 const stickyHeader = () => {
   let scrY = window.scrollY;
@@ -57,7 +55,7 @@ menuIcon.addEventListener("click", () => {
 //   else console.log(false);
 // };
 
-// menu.addEventListener("click", toggleIcon);
+menu.addEventListener("click", toggleIcon);
 
 // Naviagtion Menu Design : 해당 섹션에 네비게이션 활성화 및 디자인 변경
 const navAll = document.querySelectorAll(".nav-item");
@@ -116,3 +114,5 @@ sr.reveal(".product-box", { interval: 200 });
 
 // sr.reveal(".c-home", { duration: 1000, origin: "bottom", distance: "50px" });
 // sr.reveal(".c-about", { duration: 1000, origin: "bottom", distance: "50px" });
+
+// Mobile Navigation Design
