@@ -83,6 +83,7 @@
   }
   .nav-menu {
     display: block;
+    transition: all 0.4s;
   }
   .nav-list {
     position: absolute;
@@ -91,10 +92,15 @@
     left: 0;
     width: 100%;
     top: 100%;
-    z-index: 1000;
+    height: 0;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+  }
+  .nav-list.active {
+    height: auto;
+    transition: all 0.4s;
+    box-shadow: 0 5px 8px #efefef;
   }
   .nav-item {
     padding: 1rem;

@@ -38,9 +38,13 @@ window.addEventListener("scroll", () => {
 
 // Header Menu toggle
 const menuIcon = document.querySelector(".ri-menu-line");
-menuIcon.addEventListener("click", () => {
+const navList = document.querySelector(".nav-list");
+menuIcon.addEventListener("click", (e) => {
+  e.preventDefault();
   let icon = "close";
-  menuIcon.className === "ri-menu-line" ? (icon = "close") : (icon = "menu");
+  menuIcon.className === "ri-menu-line"
+    ? ((icon = "close"), navList.classList.add("active"))
+    : ((icon = "menu"), navList.classList.remove("active"));
   menuIcon.className = `ri-${icon}-line`;
 });
 
@@ -111,7 +115,6 @@ sr.reveal(".c-home");
 sr.reveal(".c-about");
 sr.reveal(".step-infoItem", { interval: 200 });
 sr.reveal(".product-box", { interval: 200 });
-
 // sr.reveal(".c-home", { duration: 1000, origin: "bottom", distance: "50px" });
 // sr.reveal(".c-about", { duration: 1000, origin: "bottom", distance: "50px" });
 
