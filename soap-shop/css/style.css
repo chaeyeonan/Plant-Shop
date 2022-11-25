@@ -82,3 +82,41 @@ button {
 }
 
 /* Common Style */
+.wrapper {
+  width: var(--ls-full);
+  height: auto;
+  overflow: hidden;
+}
+.container {
+  width: var(--ls-full);
+  max-width: 1280px;
+  height: auto;
+  margin: auto;
+  padding: 0 var(--el-wide);
+}
+.section {
+  width: var(--ls-full);
+  height: auto;
+  padding: var(--el-section) 0;
+}
+
+/* Header Style */
+#main-section {
+  padding: 0;
+  width: var(--ls-full);
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-section img {
+  position: absolute;
+  width: var(--ls-full);
+  min-width: 1280px;
+  height: var(--ls-full);
+  object-fit: cover;
+}
+/* Lading Section Style */
