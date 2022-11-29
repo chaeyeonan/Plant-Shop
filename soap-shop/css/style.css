@@ -331,3 +331,45 @@ span.bar_line:nth-child(2) {
   height: var(--ls-full);
   object-fit: cover;
 }
+
+.landing-text-box {
+  z-index: 10;
+}
+.landing-text-box h1 {
+  font-size: var(--fs-title);
+  line-height: 1.4;
+  font-weight: var(--fw-400);
+}
+.landing-text-box p {
+  font-size: var(--fs-14);
+  width: var(--ls-1-3);
+  padding: var(--el-medium) 0;
+}
+.landing-text-box button {
+  padding: var(--el-small) var(--el-medium);
+  background: var(--color-black);
+  color: #fff;
+  border-radius: 0.25rem;
+  font-size: var(--fs-14);
+}
+
+/* meet section style */
+.meet-section .meet-wrapper {
+  width: var(--ls-full);
+  height: auto;
+  display: flex;
+  column-gap: var(--el-wide);
+  align-items: center;
+}
+
+.meet-section .meet-textBox {
+  width: var(--ls-1-2);
+}
+.meet-section .meet-imgBox {
+  width: var(--ls-1-2);
+  display: flex;
+}
+.meet-section img {
+  width: var(--ls-full);
+  border-radius: 0.25rem;
+}
