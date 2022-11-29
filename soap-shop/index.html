@@ -8,8 +8,14 @@
     <!-- Favicon Link -->
     <link rel="shorcut icon" href="/soap-shop/images/favicon.png" />
     <link rel="apple-touch-icon" href="/soap-shop/images/favicon.png" />
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- CSS Link -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/soap-shop/css/style.css" />
+    <link rel="stylesheet" href="/soap-shop/css/media.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -26,32 +32,70 @@
           <div class="logo">
             <a href="#"><img src="/soap-shop/images/logo.svg" alt="logo" /></a>
           </div>
-          <ul class="sns">
-            <li>
-              <a href="#">
-                <img src="/soap-shop/images/sns/sns-icon-1.svg" alt="sns1" />
-              </a>
+
+          <ul class="info">
+            <li class="sns">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img
+                      src="/soap-shop/images/sns/sns-icon-1.svg"
+                      alt="sns1"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="/soap-shop/images/sns/sns-icon-2.svg"
+                      alt="sns2"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="/soap-shop/images/sns/sns-icon-3.svg"
+                      alt="sns3"
+                    />
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <a href="#">
-                <img src="/soap-shop/images/sns/sns-icon-2.svg" alt="sns2" />
-              </a>
+            <li class="cart">
+              <a href="#"><i class="ri-shopping-cart-line"></i><em>(0)</em></a>
             </li>
-            <li>
-              <a href="#">
-                <img src="/soap-shop/images/sns/sns-icon-3.svg" alt="sns3" />
-              </a>
+            <li class="user">
+              <button><i class="ri-user-3-fill"></i></button>
             </li>
           </ul>
+          <div class="mobile-btn-wrapper">
+            <div class="mobile-btn not-active">
+              <span class="bar_line"></span>
+              <span class="bar_line"></span>
+              <span class="bar_line"></span>
+            </div>
+          </div>
         </div>
+
+        <!-- Mobile Menu Elements -->
+        <div class="mobile-menus"></div>
       </header>
       <section id="main-section" class="section landing-section">
         <img src="/soap-shop/images/landing-image.jpeg" alt="landing-image" />
+        <div class="landing-text-box container">
+          <h1>Handcrafted<br />Natural Soap</h1>
+          <p>
+            Sopaly is a plant-based hand soap that is free from fragrances,
+            animal fats and dyes. Gentle on your hands, kind to nature.
+          </p>
+          <a href="#" class="common-btn"><button>Shop Now</button></a>
+        </div>
       </section>
     </div>
     <!-- Scroll Flugin -->
-    <!-- JS Script -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- JS Script -->
     <script src="/soap-shop/js/custom.js"></script>
   </body>
 </html>
