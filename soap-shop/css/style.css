@@ -368,8 +368,9 @@ span.bar_line:nth-child(2) {
 .meet-section .meet-imgBox {
   width: var(--ls-1-2);
   display: flex;
+  align-items: center;
 }
-.meet-section img {
+.meet-section .meet-imgBox img {
   width: var(--ls-full);
   border-radius: 0.25rem;
 }
