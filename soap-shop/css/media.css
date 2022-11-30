@@ -71,6 +71,28 @@
   html {
     font-size: 14px;
   }
+  .section {
+    padding: var(--el-section-small) 0;
+  }
+  .container {
+    padding: 0 var(--el-medium);
+  }
+  /* Meet Section style */
+  .meet-section .meet-wrapper {
+    flex-direction: column;
+    padding: 0 10%;
+  }
+  .meet-section .meet-textBox {
+    width: var(--ls-full);
+  }
+  .meet-section .meet-textBox p {
+    margin: 0;
+    width: var(--ls-full);
+  }
+  .meet-section .meet-imgBox {
+    width: var(--ls-full);
+    padding: 30px 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -86,5 +108,21 @@
   }
   .overlay {
     opacity: 0.7;
+  }
+
+  /* Meet Section style */
+  .meet-section .meet-wrapper {
+    padding: 0 5%;
+  }
+  .meet-section .meet-textBox p,
+  .meet-section .meet-textBox span {
+    font-size: var(--fs-16);
+  }
+  .meet-section .meet-imgBox {
+    column-gap: var(--el-normal);
+    padding: 30px 0;
+  }
+  .meet-section .meet-left-image {
+    row-gap: var(--el-normal);
   }
 }

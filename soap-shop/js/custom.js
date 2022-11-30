@@ -39,4 +39,20 @@ window.addEventListener("scroll", stickyHeader);
 
 // Scrollreveal Effect
 const sr = ScrollReveal({ reset: false });
-sr.reveal(".wrapper", { durationi: 1000 });
+sr.reveal(".wrapper", { duration: 1000 });
+sr.reveal(".landing-text-box", {
+  duration: 1000,
+  origin: "right",
+  distance: "80px",
+});
+sr.reveal(".meet-textBox", {
+  duration: 1000,
+  origin: "bottom",
+  distance: "40px",
+});
+sr.reveal(".meet-imgBox img", {
+  duration: 1000,
+  origin: "bottom",
+  distance: "40px",
+  interval: "200",
+});

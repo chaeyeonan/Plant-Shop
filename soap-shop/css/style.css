@@ -46,6 +46,7 @@
   --el-normal: 0.75rem;
   --el-medium: 1.25rem;
   --el-wide: 2.5rem;
+  --el-section-small: 3rem;
 }
 
 /* Reset Style */
@@ -361,16 +362,63 @@ span.bar_line:nth-child(2) {
   column-gap: var(--el-wide);
   align-items: center;
 }
-
 .meet-section .meet-textBox {
   width: var(--ls-1-2);
+}
+.meet-section .meet-textBox h4 {
+  font-size: var(--fs-12);
+  font-weight: var(--fw-400);
+}
+.meet-section .meet-textBox p {
+  font-size: var(--fs-18);
+  line-height: 1.8;
+  width: 80%;
+  padding: var(--el-wide) 0 var(--el-medium) 0;
+  position: relative;
+}
+.meet-section .meet-textBox p::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: var(--color-black);
+  left: 0;
+  bottom: 0;
+}
+.meet-section .meet-textBox span {
+  display: flex;
+  font-size: var(--fs-18);
+  padding: var(--el-medium) 0;
+  align-items: center;
+}
+.meet-section .meet-textBox span::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: var(--color-black);
+  display: block;
+  margin: 0 10px;
 }
 .meet-section .meet-imgBox {
   width: var(--ls-1-2);
   display: flex;
   align-items: center;
+  column-gap: var(--el-medium);
+}
+.meet-section .meet-left-image {
+  width: var(--ls-1-2);
+  display: flex;
+  flex-direction: column; /* flex가 column인 경우 align-items 가 가로, justify-contents 가 세로 됨 */
+  align-items: flex-end;
+  row-gap: var(--el-medium);
+}
+.meet-section .meet-right-image {
+  width: var(--ls-1-2);
 }
 .meet-section .meet-imgBox img {
   width: var(--ls-full);
   border-radius: 0.25rem;
+}
+.meet-section .meet-imgBox img:nth-child(2) {
+  width: 80%;
 }
