@@ -50,9 +50,25 @@ sr.reveal(".meet-textBox", {
   origin: "bottom",
   distance: "40px",
 });
-sr.reveal(".meet-imgBox img", {
+sr.reveal(".meet-imgBox img, .feature", {
   duration: 1000,
   origin: "bottom",
   distance: "40px",
   interval: "200",
+});
+
+//Swiper slider
+const swiper = new Swiper(".swiper", {
+  loop: true, //슬라이더 무한 반복
+  navigation: {
+    //네비게이션
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    //슬라이더 인디케이터
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
 });
