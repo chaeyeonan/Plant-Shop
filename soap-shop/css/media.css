@@ -151,6 +151,7 @@
     font-size: 25px;
   }
   .products {
+    flex-wrap: nowrap;
     flex-direction: column;
   }
   .product-frame {
@@ -170,6 +171,7 @@
     text-align: left;
     align-items: flex-start;
     justify-content: center;
+    width: var(--ls-1-2);
   }
   .product-txt h6 {
     font-size: var(--fs-20);
@@ -236,6 +238,9 @@
   }
 
   /* special offers style */
+  .products {
+    flex-wrap: nowrap;
+  }
   .product-txt h6 {
     font-size: var(--fs-18);
     padding: 0 0 var(--el-medium) 0;
