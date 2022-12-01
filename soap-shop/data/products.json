@@ -1,0 +1,30 @@
+[
+  {
+    "prodId": "1",
+    "prodPath": "/images/offers/offers-image-1.jpeg",
+    "prodTit": "My Perfect Bath Set",
+    "prodPri": "$49.95",
+    "prodDes": "Coconut&lime handmade soap that you really can't afford to skip!"
+  },
+  {
+    "prodId": "2",
+    "prodPath": "/images/offers/offers-image-2.jpeg",
+    "prodTit": "Family Set",
+    "prodPri": "$49.95",
+    "prodDes": "This is a set of 3 soaps of lavender, coconut & lime, and mint chocolate chip scents"
+  },
+  {
+    "prodId": "3",
+    "prodPath": "/images/offers/offers-image-3.jpeg",
+    "prodTit": "A Years Supply",
+    "prodPri": "$49.95",
+    "prodDes": "Coconut&lime handmade soap that you really can't afford to skip!"
+  },
+  {
+    "prodId": "4",
+    "prodPath": "/images/offers/offers-image-1.jpeg",
+    "prodTit": "Spcial Offer No1",
+    "prodPri": "$49.95",
+    "prodDes": "Coconut&lime handmade soap that you really can't afford to skip!"
+  }
+]
