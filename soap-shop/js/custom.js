@@ -75,31 +75,36 @@ const swiper = new Swiper(".swiper", {
 
 //Get Products Json data
 const productsBox = document.querySelector(".products");
-fetch("/soap-shop/data/products.json")
-  .then((res) => res.json())
-  .then((data) => {
-    let dataEl;
-    data.map((item) => {
-      dataEl = ` 
-      <div class="product-frame">
-        <div class="product-item">
-          <div class="product-img">
-            <img
-              src="/soap-shop${item.prodPath}"
-              alt="offer${item.prodId}"
-            />
+
+const getData = async () => {
+  await fetch("/soap-shop/data/products.json")
+    .then((res) => res.json())
+    .then((data) => {
+      let dataEl;
+      data.map((item) => {
+        dataEl = ` 
+        <div class="product-frame">
+          <div class="product-item">
+            <div class="product-img">
+              <img
+                src="/soap-shop${item.prodPath}"
+                alt="offer${item.prodId}"
+              />
+            </div>
+            <div class="product-txt">
+              <h6>${item.prodTit}</h6>
+              <p class="product-price">${item.prodPri}</p>
+              <p class="product-desc">
+                ${item.prodDes}
+              </p>
+              <a href="#" class="common-btn">Go To Payment</a>
+            </div>
           </div>
-          <div class="product-txt">
-            <h6>${item.prodTit}</h6>
-            <p class="product-price">${item.prodPri}</p>
-            <p class="product-desc">
-              ${item.prodDes}
-            </p>
-            <a href="#" class="common-btn">Go To Payment</a>
-          </div>
-        </div>
-      </div>`;
-      productsBox.innerHTML += dataEl;
-    });
-  })
-  .catch((err) => console.log(err));
+        </div>`;
+        productsBox.innerHTML += dataEl;
+      });
+    })
+    .catch((err) => console.log(err));
+};
+
+getData();
