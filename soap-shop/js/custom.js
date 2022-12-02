@@ -45,12 +45,12 @@ sr.reveal(".landing-text-box", {
   origin: "right",
   distance: "80px",
 });
-sr.reveal(".meet-textBox", {
+sr.reveal(".meet-textBox, .swiper,.feature, .review-frame, .products", {
   duration: 1000,
   origin: "bottom",
   distance: "40px",
 });
-sr.reveal(".meet-imgBox img, .feature", {
+sr.reveal(".meet-imgBox img, .feature, .review-frame, .products", {
   duration: 1000,
   origin: "bottom",
   distance: "40px",

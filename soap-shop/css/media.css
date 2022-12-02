@@ -97,6 +97,18 @@
   .product-txt .product-desc {
     width: 90%;
   }
+
+  /* Review Section */
+  .review-frame {
+    padding: 0 var(--el-normal);
+  }
+  .review-txt {
+    height: 50px;
+    -webkit-line-clamp: 2;
+  }
+  .review-user {
+    padding: var(--el-medium) 0 var(--el-normal) 0;
+  }
 }
 
 @media screen and (max-width: 786px) {
@@ -184,6 +196,23 @@
     width: 90%;
     padding: var(--el-medium) 0;
   }
+
+  /* Review Section */
+  .review-section h4 {
+    padding: var(--el-wide) 0 var(--el-medium) 0;
+  }
+  .reviews {
+    padding: var(--el-wide);
+  }
+  .review-frame {
+    width: var(--ls-1-2);
+  }
+  .review-frame {
+    padding: var(--el-medium);
+  }
+  .review-txt {
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -255,5 +284,10 @@
   }
   .product-txt .common-btn {
     font-size: var(--fs-12);
+  }
+
+  /* Review Section */
+  .review-frame {
+    width: var(--ls-1-full);
   }
 }
