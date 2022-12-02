@@ -639,3 +639,79 @@ span.bar_line:nth-child(2) {
   font-size: var(--fs-12);
   font-weight: var(--fw-300);
 }
+
+/* Gallery Section */
+.gallery-section h4 {
+  width: var(--ls-full);
+  text-align: center;
+  padding: var(--el-section) 0;
+  font-size: 30px;
+  font-weight: var(--fw-400);
+}
+.grid-item {
+  width: var(--ls-1-3);
+  padding: var(--el-small);
+}
+.grid-item img {
+  width: var(--ls-full);
+  border-radius: 0.25rem;
+}
+
+/* Insta Section */
+.c-insta {
+  display: flex;
+  justify-content: space-between;
+}
+.c-insta ul {
+  width: var(--ls-full);
+  display: flex;
+}
+.c-insta ul li {
+  width: 200px;
+  height: 400px;
+  opacity: 0.5;
+}
+.insta-left-img ul li:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.insta-right-img ul li:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.insta-right-img ul li:nth-child(1) p {
+  transform: rotate(90deg);
+  height: var(--ls-full);
+}
+.c-insta li img {
+  width: var(--ls-full);
+  height: 200px;
+  object-fit: cover;
+  padding: 5px;
+  border-radius: 0.25rem;
+}
+
+.c-insta .insta-txt {
+  width: var(--ls-full);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.insta-txt .insta-title {
+  text-align: -center;
+  width: 90%;
+  font-size: 30px;
+  font-weight: var(--fw-400);
+}
+.insta-txt .insta-id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+.insta-txt .instaid i {
+  padding: 0 6px;
+}

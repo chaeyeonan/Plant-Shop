@@ -290,4 +290,8 @@
   .review-frame {
     width: var(--ls-1-full);
   }
+  /* gallery section */
+  .grid-item {
+    width: var(--ls-1-2);
+  }
 }
