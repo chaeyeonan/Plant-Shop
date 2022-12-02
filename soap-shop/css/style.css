@@ -701,7 +701,7 @@ span.bar_line:nth-child(2) {
   justify-content: center;
 }
 .insta-txt .insta-title {
-  text-align: -center;
+  text-align: center;
   width: 90%;
   font-size: 30px;
   font-weight: var(--fw-400);
