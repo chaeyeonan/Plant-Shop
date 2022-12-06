@@ -29,4 +29,12 @@ $(function () {
   };
 
   $.getJSON("/soap-shop/data/gallery.json", getGalleryData);
+
+  // Navigation moving to Target Section
+  $(".nav-lists li").on("click", function () {
+    const targetIdx = $(this).index();
+    const pagePosition = $(".nav-target").eq(targetIdx).offset().top;
+
+    $("html,body").animate({ scrollTop: pagePosition }, 300);
+  });
 });
