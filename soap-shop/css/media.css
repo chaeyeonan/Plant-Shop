@@ -336,4 +336,19 @@
   .insta-txt .insta-title {
     font-size: 20px;
   }
+
+  /* footer */
+  .footer-upper {
+    flex-direction: column;
+  }
+  .logo-img {
+    padding: 30px 0;
+  }
+  .footer-lower {
+    flex-direction: column;
+    text-align: center;
+  }
+  .copyright {
+    padding-bottom: 10px;
+  }
 }

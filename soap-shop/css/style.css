@@ -720,3 +720,51 @@ span.bar_line:nth-child(2) {
 .insta-txt .instaid i {
   padding: 0 6px;
 }
+
+/* footer */
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--el-wide) 0;
+  font-weight: var(--fw-300);
+}
+.guide {
+  display: flex;
+}
+.guide-txt {
+  display: flex;
+  padding: 0 20px;
+}
+.guide-txt li {
+  padding: 0 20px;
+}
+.guide-sns {
+  display: flex;
+}
+.guide-sns li {
+  padding: 0 10px;
+}
+.guide-sns li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-line {
+  width: var(--ls-full);
+  height: 1px;
+  background: var(--color-black);
+}
+
+.footer-lower {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--fw-300);
+  padding: var(--el-wide) 0;
+}
+.footer-lower span {
+  text-decoration: underline;
+}
