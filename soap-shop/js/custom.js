@@ -108,3 +108,12 @@ const getData = async () => {
 };
 
 getData();
+
+// Fit Insta Img Size
+let setHeight = document.querySelector("#img2").offsetHeight;
+document.querySelector("#img1").style.height = `${setHeight}px`;
+
+window.addEventListener("resize", () => {
+  let setHeight = document.querySelector("#img2").offsetHeight;
+  document.querySelector("#img1").style.height = `${setHeight}px`;
+});

@@ -667,9 +667,14 @@ span.bar_line:nth-child(2) {
   display: flex;
 }
 .c-insta ul li {
-  width: 200px;
-  height: 400px;
+  width: var(--ls-1-2);
+  /* height: 400px; */
   opacity: 0.5;
+}
+.insta-left-img,
+.insta-right-img,
+.insta-txt {
+  width: var(--ls-1-3);
 }
 .insta-left-img ul li:nth-child(2) {
   display: flex;
@@ -687,14 +692,14 @@ span.bar_line:nth-child(2) {
 }
 .c-insta li img {
   width: var(--ls-full);
-  height: 200px;
+  height: auto;
   object-fit: cover;
   padding: 5px;
   border-radius: 0.25rem;
 }
 
 .c-insta .insta-txt {
-  width: var(--ls-full);
+  /* width: var(--ls-full); */
   display: flex;
   flex-direction: column;
   align-items: center;
