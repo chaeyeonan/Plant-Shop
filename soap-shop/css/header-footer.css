@@ -215,11 +215,12 @@ span.bar_line:nth-child(2) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--el-wide) 0;
+  padding: 25px 0;
   font-weight: var(--fw-300);
 }
 .guide {
   display: flex;
+  font-size: var(--fs-14);
 }
 .guide-txt {
   display: flex;
@@ -252,7 +253,8 @@ span.bar_line:nth-child(2) {
   display: flex;
   justify-content: space-between;
   font-weight: var(--fw-300);
-  padding: var(--el-wide) 0;
+  font-size: var(--fs-14);
+  padding: 30px 0;
 }
 .footer-lower span {
   text-decoration: underline;
